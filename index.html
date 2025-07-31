@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>금지어 검사기</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+    }
+    textarea {
+      width: 100%;
+      height: 100px;
+      margin-bottom: 10px;
+    }
+    button {
+      padding: 10px 20px;
+      cursor: pointer;
+      margin-bottom: 15px;
+    }
+    #result {
+      font-weight: bold;
+      white-space: pre-wrap;
+    }
+    .highlight {
+      font-weight: bold;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>금지어 검사기</h2>
+  <textarea id="userInput" placeholder="여기에 텍스트를 입력하세요"></textarea>
+  <br />
+  <button onclick="checkBannedWords()">검사하기</button>
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

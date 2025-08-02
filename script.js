@@ -5,7 +5,7 @@ const baseWords = [
   "빠가", "빠라", "살인", "시바", "씹",
   "야사", "음부", "음탕", "일베", "임신",
   "자살", "자지", "젖", "좇", "죽어", "죽여", "지들이",
-  "짱깨", "쪽바리", "후장"
+  "짱깨", "쪽바리", "후장", "나체", "호로"
 ];
 
 function generateVariants(word) {
@@ -78,3 +78,4 @@ function containsBannedWord(text) {
   const cleaned = sanitizeText(text);
   return cleanedBannedWords.some(word => cleaned.includes(word));
 }
+
